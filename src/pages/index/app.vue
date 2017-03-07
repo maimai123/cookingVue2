@@ -1,30 +1,44 @@
 <template>
 	<div>
-	<h1>
-		<Vinput></Vinput>
-		<h1>来自火星的麦麦</h1>
-	</h1>
+	<HeadApp />
+	<div class="container mt30">
+		<div class="row">
+			<div class="col-sm-4">
+				<sidebar></sidebar>
+			</div>
+			<div class="col-sm-8">
+				<timeCompent	/>
+			</div>
+		</div>
+	</div>
 	</div>
 </template>
 <script>
-import Vinput from 'components/vinput.vue';
-
+import HeadApp from 'components/header.vue';
+import sidebar from 'components/sidebar.vue';
+import timeCompent from 'components/TimeEntries.vue';
 export default {
 	name: 'app',
+	data () {
+    return {
+      username: '麦麦'
+    }
+  },
 	components:{
-		Vinput
+		HeadApp,
+		sidebar,
+		timeCompent
 	}
 }
 </script>
-<style>
-	h1{
-		color: #f00;
-		margin: 5% auto;
-		text-align: center;
-		font-family: arial;
-		font-weight: 50;
+<style lang="less">
+	.jumbotron{
+		width: 80%;
+		h1{
+			margin-bottom: 10px;
+		}
 	}
-	img{
-		width:200px;
+	.mt30{
+		margin-top: 30px;
 	}
 </style>

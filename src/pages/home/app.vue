@@ -1,19 +1,16 @@
 <template>
 	<div>
 	<h1>
-		<Vinput></Vinput>
 		<h1>home页-by麦麦</h1>
 		<em>博客地址： </em>	<a href="https://maimai123.github.io">火星麦的博客</a>
 	</h1>
 	</div>
 </template>
 <script>
-import Vinput from 'components/vinput.vue';
 
 export default {
 	name: 'app',
 	components:{
-		Vinput
 	}
 }
 </script>

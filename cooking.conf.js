@@ -28,7 +28,7 @@ cooking.set({
   ],
   publicPath: './',
   assetsPath: './static',
-  urlLoaderLimit: 10000,
+  urlLoaderLimit: 30000,
   extractCSS: 'static/css/[name].css',
   alias: {
     'src': path.join(__dirname, 'src'),

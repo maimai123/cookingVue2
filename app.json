@@ -2,12 +2,12 @@
   "pages": [
     {
       "entry": "index",
-      "title": "默认",
+      "title": "首页",
       "cdn": {}
     },
     {
-      "entry": "home",
-      "title": "首页",
+      "entry": "addnew",
+      "title": "新任务",
       "cdn": {}
     },
     {
