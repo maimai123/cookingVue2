@@ -45,21 +45,23 @@ export default {
 	name: 'addnew',
 	data () {
 		return{
-
+			lists : store.state.lists
 		}
 	},
 	components:{
 		HeadApp,
 		sidebar,
 	},
+	created(){
+		console.log(this)
+	},
 	computed :{
-		lists(){
-			return store.state.lists
-		}
+		// lists(){
+		// 	return store.state.lists
+		// }
 	},
 	methods:{
 		deletePlan(index) {
-			console.log(this.lists[index].totalTime);
       // 减去总时间
       store.dispatch('decTotalTime',this.lists[index].totalTime)
       // 删除该计划

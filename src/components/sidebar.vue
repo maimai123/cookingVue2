@@ -13,13 +13,13 @@ import store from '../vuex/store';
 	export default {
 		data(){
 			return{
-
+				time : store.state.totalTime
 			}
 		},
 		computed:{
-			time(){
-				return store.state.totalTime;
-			}
+			// time(){
+			// 	return store.state.totalTime;
+			// }
 		}
 	}
 </script>
